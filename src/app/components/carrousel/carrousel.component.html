@@ -1,0 +1,20 @@
+@if (showCarousel) {
+<p-carousel
+  [value]="cards"
+  [numVisible]="4"
+  [numScroll]="1"
+  [circular]="true"
+  [responsiveOptions]="responsiveOptions"
+  styleClass="custom-carousel"
+  autoplayInterval="5000"
+>
+  <ng-template let-card pTemplate="item">
+    <app-card
+      class="card"
+      [title]="card.title"
+      [content]="card.content"
+      [toggleProp]="isSmallScreen"
+    ></app-card>
+  </ng-template>
+</p-carousel>
+}

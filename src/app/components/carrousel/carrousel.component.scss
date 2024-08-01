@@ -1,0 +1,22 @@
+:host {
+  padding: 1rem;
+}
+
+::ng-deep .custom-carousel {
+  .p-carousel-items-content {
+    min-height: 450px;
+  }
+
+  .p-ripple.p-element.p-carousel-prev.p-link {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .p-ripple.p-element.p-carousel-next.p-link {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+}
+

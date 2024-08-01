@@ -1,0 +1,9 @@
+<div
+  class="card"
+  (click)="toggleFunction()"
+  [id]="toggleProp() && toggle ? 'open' : undefined"
+>
+  <h2>{{ title() }}</h2>
+  <p>{{ content() }}</p>
+  <div class="arrow"></div>
+</div>

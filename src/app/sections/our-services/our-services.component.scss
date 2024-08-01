@@ -1,0 +1,35 @@
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .title {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 2rem auto;
+  
+    width: 75%;
+    padding-bottom: 2rem;
+    
+    text-align: center;
+    border-bottom: 1px solid var(--primary-color);
+  }
+
+  .content {
+    font-size: 20px;
+    text-align: center;
+
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 700px) {
+  section {
+    .title {
+      font-size: 38px;
+  
+      width: 65%;
+    }
+  }
+}
