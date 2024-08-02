@@ -5,16 +5,22 @@ import { Component, input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './card.component.html',
-  styleUrl: './card.component.scss'
+  styleUrl: './card.component.scss',
 })
 export class CardComponent {
   title = input.required<string>();
   content = input.required<string>();
   toggleProp = input<boolean>();
 
-  toggle: boolean = false;
+  toggle = false;
 
   toggleFunction(): void {
     this.toggle = !this.toggle;
+  }
+
+  handleKeyDown(event: KeyboardEvent): void {
+    if (event.key === 'Enter' || event.key === ' ') {
+      this.toggleFunction();
+    }
   }
 }

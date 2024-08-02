@@ -9,5 +9,11 @@
     Fale com uma de nossas especialistas hoje mesmo e inicie seu caminho rumo a
     um planejamento financeiro sob medida para você.
   </p>
-  <app-button [text]="text" class="btn" />
+  <app-button
+    class="btn"
+    [text]="text"
+    tabindex="0"
+    (click)="openPopup()"
+    (keydown)="handleKeyDown($event)"
+  />
 </div>

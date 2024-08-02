@@ -9,7 +9,12 @@
       <a href="#about">Sobre nós</a>
     </div>
     <div class="contat">
-      <a (click)="openPopup()">Entre em contato</a>
+      <a 
+      tabindex="0"
+      (click)="openPopup()"
+      (keydown)="handleKeyDown($event)"
+      >Entre em contato
+    </a>
     </div>
   </div>
 </div>

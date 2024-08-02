@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'nav-navbar',
+  selector: 'app-navbar',
   standalone: true,
   imports: [],
   templateUrl: './navbar.component.html',
@@ -10,5 +10,11 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   openPopup(): void {
     console.log('arrumar aqui');
+  }
+
+  handleKeyDown(event: KeyboardEvent): void {
+    if (event.key === 'Enter' || event.key === ' ') {
+      this.openPopup();
+    }
   }
 }

@@ -1,6 +1,8 @@
 <div
   class="card"
+  tabindex="0"
   (click)="toggleFunction()"
+  (keydown)="handleKeyDown($event)"
   [id]="toggleProp() && toggle ? 'open' : undefined"
 >
   <h2>{{ title() }}</h2>

@@ -9,5 +9,15 @@ import { ButtonComponent } from '../button/button.component';
   styleUrl: './content-home.component.scss',
 })
 export class ContentHomeComponent {
-  protected text: string = 'Entre em contato com uma especialista';
+  protected text = 'Entre em contato com uma especialista';
+
+  openPopup(): void {
+    console.log('arrumar aqui');
+  }
+
+  handleKeyDown(event: KeyboardEvent): void {
+    if (event.key === 'Enter' || event.key === ' ') {
+      this.openPopup();
+    }
+  }
 }

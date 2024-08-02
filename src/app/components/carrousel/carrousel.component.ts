@@ -26,8 +26,8 @@ interface CardInterface {
 export class CarrouselComponent implements AfterViewInit {
   protected cards: CardInterface[];
   protected responsiveOptions: any[];
-  protected isSmallScreen: boolean = false;
-  protected showCarousel: boolean = true;
+  protected isSmallScreen = false;
+  protected showCarousel = true;
 
   constructor(
     private cdr: ChangeDetectorRef,
@@ -54,7 +54,7 @@ export class CarrouselComponent implements AfterViewInit {
   }
 
   @HostListener('window:resize', ['$event'])
-  onResize(event: Event) {
+  onResize() {
     this.checkScreenSize();
   }
 
