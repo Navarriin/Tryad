@@ -1,5 +1,5 @@
-import { PopupService } from './../../services/popup.service';
 import { Component } from '@angular/core';
+import { PopupService } from './../../services/popup.service';
 import { ButtonComponent } from '../button/button.component';
 
 @Component({
@@ -12,7 +12,7 @@ import { ButtonComponent } from '../button/button.component';
 export class ContentHomeComponent {
   protected text = 'Entre em contato com uma especialista';
 
-  constructor(private popupService :PopupService) {}
+  constructor(private popupService: PopupService) {}
 
   openPopup(): void {
     this.popupService.open();

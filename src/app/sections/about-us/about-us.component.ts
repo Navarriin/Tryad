@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ButtonComponent } from '../../components/button/button.component';
 import { PopupService } from '../../services/popup.service';
+import { ButtonComponent } from '../../components/button/button.component';
 
 @Component({
   selector: 'app-about-us',
@@ -10,8 +10,7 @@ import { PopupService } from '../../services/popup.service';
   styleUrl: './about-us.component.scss',
 })
 export class AboutUsComponent {
-
-  constructor(private popupService: PopupService){}
+  constructor(private popupService: PopupService) {}
 
   openPopup(): void {
     this.popupService.open();

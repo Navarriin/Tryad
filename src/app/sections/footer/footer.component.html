@@ -15,7 +15,9 @@
       <a href="#home">Home</a>
       <a href="#services">Nossos Serviços</a>
       <a href="#about">Sobre Nós</a>
-      <!-- <a @click="openPopup">Entre em Contato</a> -->
+      <a tabindex="0" (click)="openPopup()" (keydown)="handleKeyDown($event)">
+        Entre em contato</a
+      >
     </div>
   </div>
 </section>

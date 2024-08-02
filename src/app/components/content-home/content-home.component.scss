@@ -36,7 +36,7 @@
   div {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
+    gap: 1.4rem;
 
     margin-top: 2rem;
     font-size: 12px;
@@ -46,10 +46,8 @@
     }
 
     .btn {
-      margin: 2rem auto 0;
+      margin-top: 1.4rem;
     }
-
-    
   }
 }
 
@@ -68,7 +66,17 @@
       text-align: justify;
 
       .btn {
-        margin: auto;
+        margin: 2rem auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 1160px) {
+  :host {
+    div {
+      .btn {
+        margin: 3rem auto;
       }
     }
   }

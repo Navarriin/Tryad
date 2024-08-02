@@ -50,8 +50,8 @@ section {
     }
 
     .btn {
-      margin-top: 1.4rem;
       display: flex;
+      margin-top: 1.4rem;
       justify-content: center;
     }
   }
@@ -94,7 +94,7 @@ section {
       text-align: justify;
 
       .btn {
-        justify-content: start;
+        justify-content: end;
       }
     }
   }
@@ -105,11 +105,6 @@ section {
     .content {
       width: 90%;
       padding: 5rem 5rem 3rem 5rem;
-
-      .btn {
-        margin-top: 0;
-        justify-content: end;
-      }
     }
 
     .img {

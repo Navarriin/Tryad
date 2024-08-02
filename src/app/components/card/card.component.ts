@@ -8,9 +8,9 @@ import { Component, input } from '@angular/core';
   styleUrl: './card.component.scss',
 })
 export class CardComponent {
+  toggleProp = input<boolean>();
   title = input.required<string>();
   content = input.required<string>();
-  toggleProp = input<boolean>();
 
   toggle = false;
 

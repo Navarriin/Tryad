@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { ScrollService } from '../../services/scroll.service';
 import { PopupService } from '../../services/popup.service';
+import { ScrollService } from '../../services/scroll.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -13,8 +13,8 @@ export class NavbarComponent implements OnInit {
   isHidden = false;
 
   constructor(
-    private scrollService: ScrollService,
-    private popupService: PopupService
+    private popupService: PopupService,
+    private scrollService: ScrollService
   ) {}
 
   ngOnInit(): void {

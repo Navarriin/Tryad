@@ -1,19 +1,21 @@
 button {
   --color: var(--colorD);
-  padding: 0.8em 1.75em;
-  background-color: transparent;
-  border-radius: 6px;
-  border: 0.3px solid var(--color);
-  transition: 0.5s;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  z-index: 1;
-  font-weight: 300;
-  font-size: 12px;
-  font-family: "Roboto", "Segoe UI", sans-serif;
-  text-transform: uppercase;
   color: var(--color);
+
+  z-index: 1;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Junge", cursive;
+
+  cursor: pointer;
+  position: relative;
+  padding: 0.8em 1.75em;
+  border-radius: 6px;
+  transition: 0.5s;
+
+  overflow: hidden;
+  background-color: transparent;
+  border: 0.3px solid var(--color);
 }
 
 button::after,
@@ -22,13 +24,13 @@ button::before {
   display: block;
   height: 100%;
   width: 100%;
-  transform: skew(90deg) translate(-50%, -50%);
   position: absolute;
   inset: 50%;
   left: 25%;
   z-index: -1;
   transition: 0.8s ease-out;
   background-color: var(--color);
+  transform: skew(90deg) translate(-50%, -50%);
 }
 
 button::before {
@@ -57,13 +59,6 @@ button:active {
 @media (min-width: 900px) {
   button {
     font-size: 16px;
-
-    margin-top: 1rem;
   }
 }
 
-@media (min-width: 1400px) {
-  button {
-    margin-top: 3rem;
-  }
-}

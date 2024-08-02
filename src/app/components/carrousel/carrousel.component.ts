@@ -24,10 +24,10 @@ interface CardInterface {
   styleUrls: ['./carrousel.component.scss'],
 })
 export class CarrouselComponent implements AfterViewInit {
+  protected showCarousel = true;
+  protected isSmallScreen = false;
   protected cards: CardInterface[];
   protected responsiveOptions: any[];
-  protected isSmallScreen = false;
-  protected showCarousel = true;
 
   constructor(
     private cdr: ChangeDetectorRef,
