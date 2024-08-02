@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CarrouselComponent } from "../../components/carrousel/carrousel.component";
 
 @Component({
-  selector: 'app-our-services',
+  selector: 'section-our-services',
   standalone: true,
   imports: [CarrouselComponent],
   templateUrl: './our-services.component.html',

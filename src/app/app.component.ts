@@ -1,15 +1,24 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { CarrouselComponent } from "./components/carrousel/carrousel.component";
-import { OurServicesComponent } from "./sections/our-services/our-services.component";
-import { HomeComponent } from "./sections/home/home.component";
+import { HomeComponent } from './sections/home/home.component';
+import { NavbarComponent } from './sections/navbar/navbar.component';
+import { AboutUsComponent } from './sections/about-us/about-us.component';
+import { CarrouselComponent } from './components/carrousel/carrousel.component';
+import { OurServicesComponent } from './sections/our-services/our-services.component';
+import { FooterComponent } from "./sections/footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CarrouselComponent, OurServicesComponent, HomeComponent],
+  imports: [
+    HomeComponent,
+    NavbarComponent,
+    AboutUsComponent,
+    CarrouselComponent,
+    OurServicesComponent,
+    FooterComponent
+],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'Tryad';

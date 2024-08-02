@@ -1,0 +1,84 @@
+:host {
+  font-family: 'Junge', cursive;
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+  margin: 6rem auto;
+
+  h1 {
+    font-size: 30px;
+    font-weight: 400;
+
+    color: var(--secondy-color);
+  }
+
+  h2 {
+    display: inline-block;
+    
+    font-size: 20px;
+    font-weight: 400;
+
+    color: #000;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      var(--secondy-color) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200%;
+    animation: shine 4s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    margin-top: 2rem;
+    font-size: 12px;
+
+    p {
+      color: var(--white);
+    }
+
+    .btn {
+      margin: 2rem auto 0;
+    }
+
+    
+  }
+}
+
+@media (min-width: 720px) {
+  :host {
+    h1 {
+      font-size: 35px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    div {
+      font-size: 16px;
+      text-align: justify;
+
+      .btn {
+        margin: auto;
+      }
+    }
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200%;
+  }
+  100% {
+    background-position: -200%;
+  }
+}
