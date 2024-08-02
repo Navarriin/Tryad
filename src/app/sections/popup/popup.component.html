@@ -1,0 +1,27 @@
+<div class="overlay">
+  <div class="popup">
+    <slot>
+      <h2>Contatos</h2>
+      <div class="content">
+        <div>
+          <p>
+            Entre em contato conosco para agendar uma consulta e descobrir como
+            podemos fazer a diferença no seu planejamento financeiro.
+          </p>
+          <div class="btns">
+            <a href="https://calendly.com/juliana-regina/30min" target="_blank">
+              <app-button text="Agendar uma reunião" />
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=5519971461066&text=Ol%C3%A1%2C%20Juliana!%20Tudo%20bem%3F%20%0AAchei%20seu%20trabalho%20muito%20interessante.%20Como%20fa%C3%A7o%20para%20agendar%20uma%20consultoria%3F"
+              target="_blank"
+            >
+              <app-button text="Tirar duvidas" color="#253036" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </slot>
+    <app-button text="Fechar" color="#8a8a8a" (click)="closePopup()" />
+  </div>
+</div>

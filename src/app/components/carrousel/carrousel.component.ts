@@ -1,3 +1,6 @@
+import { CardComponent } from '../card/card.component';
+import { CarouselModule } from 'primeng/carousel';
+import { isPlatformBrowser } from '@angular/common';
 import {
   Component,
   AfterViewInit,
@@ -6,9 +9,6 @@ import {
   PLATFORM_ID,
   Inject,
 } from '@angular/core';
-import { CardComponent } from '../card/card.component';
-import { CarouselModule } from 'primeng/carousel';
-import { isPlatformBrowser } from '@angular/common';
 
 interface CardInterface {
   id: number;

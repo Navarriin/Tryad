@@ -1,3 +1,4 @@
+import { PopupService } from './../../services/popup.service';
 import { Component } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
 
@@ -11,8 +12,10 @@ import { ButtonComponent } from '../button/button.component';
 export class ContentHomeComponent {
   protected text = 'Entre em contato com uma especialista';
 
+  constructor(private popupService :PopupService) {}
+
   openPopup(): void {
-    console.log('arrumar aqui');
+    this.popupService.open();
   }
 
   handleKeyDown(event: KeyboardEvent): void {
