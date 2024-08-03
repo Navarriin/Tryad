@@ -4,7 +4,7 @@
   flex-direction: column;
 
   padding: 2rem;
-  margin: 6rem auto;
+  margin: 4rem auto;
 
   h1 {
     font-size: 30px;
@@ -16,7 +16,7 @@
   h2 {
     display: inline-block;
     
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
 
     color: #000;
@@ -39,14 +39,10 @@
     gap: 1.4rem;
 
     margin-top: 2rem;
-    font-size: 12px;
+    font-size: 16px;
 
     p {
       color: var(--white);
-    }
-
-    .btn {
-      margin-top: 1.4rem;
     }
   }
 }
@@ -54,7 +50,7 @@
 @media (min-width: 720px) {
   :host {
     h1 {
-      font-size: 35px;
+      font-size: 34px;
     }
 
     h2 {
@@ -69,6 +65,12 @@
         margin: 2rem auto;
       }
     }
+  }
+}
+
+@media (min-width: 1000px) {
+  :host {
+    margin: 6rem auto;
   }
 }
 
