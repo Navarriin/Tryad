@@ -1,18 +1,20 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { Injectable, signal } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
 })
 export class PopupService {
-  private popUpState = new BehaviorSubject<boolean>(false);
-  popUpState$ = this.popUpState.asObservable();
+  private popUpState = signal<boolean>(false);
+
+  getState(): boolean {
+    return this.popUpState();
+  }
 
   open(): void {
-    this.popUpState.next(true);
+    this.popUpState.set(true);
   }
 
   close(): void {
-    this.popUpState.next(false);
+    this.popUpState.set(false);
   }
 }
